@@ -45,43 +45,65 @@ cd Text-Video
 
 ### 🔹 2. Backend Setup
 
+```bash
 cd Backend
 npm install
+```
 
 Create a .env file inside the backend folder:
 
+```bash
 DB_URL = "mongodb://<Your-Localhost>/project"
 PORT = 5000
+```
 
 Run the backend:
 
+```bash
 npm run dev
+```
 
 ### 🔹 3. Setup the Worker
 
+```bash
 cd Worker
 pip install -r requirements.txt
+```
 
 Create a .env inside Worker/:
+
+```bash
 MONGO_URI = mongodb://<Your-Localhost>/
 DATABASE = Database
 COLLECTION = Collection name
 REDIS_HOST = Redis Host
 REDIS_PORT = Redis Port
+```
 
 Run the worker:
+
+```bash
 python worker.py
+```
 
 ### 🔹 4. Setup the Frontend
 
+```bash
 cd Frontend
 npm install
+```
 
 Create a .env inside frontend/:
+
+```bash
 VITE_BASE_URL = http://localhost:5000
+```
 
 Run the frontend:
+
+```bash
 npm run dev
+```
 
 ### 🔹 5. API Endpoints
 
@@ -111,24 +133,32 @@ How to Improve
 
 ## 🎨 Frontend Features
 
-Clean minimalist UI with Tailwind CSS
+1. Clean minimalist UI with Tailwind CSS
 
-Input for text prompt
+2. Input for text prompt
 
-"Generate Video" button with loading animation
+3. "Generate Video" button with loading animation
 
-Auto-play video preview on completion
+4. Auto-play video preview on completion
 
-Error handling and friendly messages
+5. Error handling and friendly messages
 
 ## 🤝 Contributing
 
 1. Fork this repository
 
 2. Create a new branch
-   git checkout -b feature/new-ui
+
+```bash
+git checkout -b feature/new-ui
+```
 
 3. Commit your changes
-   git commit -m "Improved frontend design"
 
+```bash
+git commit -m "Improved frontend design"
+```
+
+```bash
 4. Push to your branch and open a PR 🚀
+```
